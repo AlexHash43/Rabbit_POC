@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Common/obj
+/ConsumerApp/bin/Debug/net8.0
+/ConsumerApp/obj
+/rabbit-test/bin/Debug/net8.0
+/rabbit-test/obj
+/Common/bin/Debug/net8.0
+/.vs/Rabbit_POC/FileContentIndex
+/.vs/Rabbit_POC/v17
+/.vs

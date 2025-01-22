@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # AMQP protocol port
+      - "15672:15672"  # Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  publisherapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: publisher
+    container_name: publisherapp
+    depends_on:
+      - rabbitmq
+    ports:
+      - "5106:5106"
+    environment:
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+
+  consumerapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: consumer
+    container_name: consumerapp
+    depends_on:
+      - rabbitmq
+    ports:
+      - "5027:5027"
+    environment:
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest

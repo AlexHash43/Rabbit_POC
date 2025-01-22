@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherApp", "rabbit-test\PublisherApp.csproj", "{206EB4B7-26D8-41B8-99D9-B96A88CFC43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApp", "ConsumerApp\ConsumerApp.csproj", "{60F16BC7-1BBC-49FF-B558-82468F0AF586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{678649B6-3D0B-4B95-BD44-9E9AEDCF4C44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{7D57580F-8762-4145-984F-7045E2359314}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile.Dockerfile = Dockerfile.Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{206EB4B7-26D8-41B8-99D9-B96A88CFC43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206EB4B7-26D8-41B8-99D9-B96A88CFC43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206EB4B7-26D8-41B8-99D9-B96A88CFC43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206EB4B7-26D8-41B8-99D9-B96A88CFC43C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F16BC7-1BBC-49FF-B558-82468F0AF586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F16BC7-1BBC-49FF-B558-82468F0AF586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F16BC7-1BBC-49FF-B558-82468F0AF586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F16BC7-1BBC-49FF-B558-82468F0AF586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678649B6-3D0B-4B95-BD44-9E9AEDCF4C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678649B6-3D0B-4B95-BD44-9E9AEDCF4C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678649B6-3D0B-4B95-BD44-9E9AEDCF4C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678649B6-3D0B-4B95-BD44-9E9AEDCF4C44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
